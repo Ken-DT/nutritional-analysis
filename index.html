@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Analysis App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+    <script src="nutrition.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <h1>Analyzed Nutrition</h1>
+        <form id="search-form">
+            <input type="text" id="recipe-title" placeholder="Recipe Title">
+            <textarea id="ingredients-list" placeholder="For example:&#10;1 cup orange juice&#10;3 tablespoons olive oil&#10;2 carrots"></textarea>
+            <input type="number" id="servings" placeholder="Number of Servings" min="1" value="1">
+            <button type="submit">Analyze</button>
+        </form>
+        <div id="content">
+            <!-- Content will be dynamically generated here -->
+        </div>
+    </div>
+</body>
+</html>
